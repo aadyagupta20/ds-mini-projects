@@ -165,54 +165,87 @@ Once the dataset is loaded, you can run the cells in the notebook to perform the
 ## **Models & Analysis**
 
 **A) Model 1: Using Schooling, Income, and Adult Mortality**
+
 - Independent Variables: Schooling, Income, Adult Mortality
+
 - Target Variable: Life Expectancy
+
 - Model Type: Multiple Linear Regression
+
 - R²: 0.7299
+
 - **Interpretation**: This model uses three predictors—Schooling, Income, and Adult Mortality—to predict Life Expectancy. The R² value of 0.73 suggests that around 73% of the variance in life expectancy can be explained by these three variables. The model's performance indicates a good fit.
   
 **B) Model 2: Using Only Schooling**
+
 - Independent Variable: Schooling
+
 - Target Variable: Life Expectancy
+
 - Model Type: Simple Linear Regression
+
 - R²: 0.426
+
 - **Interpretation**: When only Schooling is used as the predictor, the model explains just 42.6% of the variance in life expectancy, reflecting a weaker relationship. This shows that the other factors (Income and Adult Mortality) might play a significant role in predicting life expectancy.
 
 ## **Metrics & Results**
 
 **Model 1: Using Schooling, Income, and Adult Mortality**
-R² (on test data): 0.7299
-MSE: 19.18
-MAE: 3.11
-RMSE: 4.38
-Adjusted R²: 0.7275
-**Interpretation**: The model explains 73% of the variance in life expectancy. With a lower MSE (19.18) and RMSE (4.38), it performs better than Model 2, indicating a strong 
 
-predictive relationship between the features and life expectancy.
+R² (on test data): 0.7299
+
+MSE: 19.18
+
+MAE: 3.11
+
+RMSE: 4.38
+
+Adjusted R²: 0.7275
+
+**Interpretation**: The model explains 73% of the variance in life expectancy. With a lower MSE (19.18) and RMSE (4.38), it performs better than Model 2, indicating a strong predictive relationship between the features and life expectancy.
+
 **Model 2: Using Only Schooling**
+
 R² (on test data): 0.426
+
 MSE: 36.71
+
 MAE: 4.38
+
 RMSE: 6.06
+
 Adjusted R²: 0.418
+
 **Interpretation**: Using only Schooling as a predictor leads to a much weaker fit. The MSE and RMSE are considerably higher, which indicates a higher error in predictions. The R² of 0.426 shows that Schooling alone doesn’t explain much of the variance in life expectancy.
 
 ## **Model Performance**
 
 **Model 1 (Multiple Independent Variables)**
+
 R²: 0.7299
+
 MSE: 19.18
+
 MAE: 3.11
+
 RMSE: 4.38
+
 Adjusted R²: 0.7275
+
 **Interpretation**: The multiple linear regression model is well-tuned with an R² of 0.73, indicating that it successfully captures most of the variance in life expectancy. The error metrics (MSE, MAE, RMSE) are reasonably low, reflecting a good predictive performance.
 
 **Model 2 (Single Independent Variable)**
+
 R²: 0.426
+
 MSE: 36.71
+
 MAE: 4.38
+
 RMSE: 6.06
+
 Adjusted R²: 0.418
+
 **Interpretation**: With only Schooling as the predictor, the model’s performance significantly declines, as seen with an R² of 0.426. The higher MSE and RMSE indicate greater prediction errors.
 
 ## **Key Insights**
