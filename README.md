@@ -54,12 +54,15 @@ df = pd.read_csv('/content/drive/My Drive/path_to_your_folder/BostonHousing.csv'
 Once the dataset is loaded, you can run the cells in the notebook to perform the Linear Regression analysis.
 
 ## **Models & Analysis**
+
 **A) Model 1: Using CRIM and ZN Only**
 - The initial model uses just CRIM (crime rate) and ZN (proportion of residential land) to predict housing prices.
 - This model gives a relatively low R² value of 0.422, showing that the model only captures about 42% of the variance in housing prices.
+
 **B) Model 2: Adding More Features (INDUS, CHAS, etc.)**
 - Additional features such as INDUS, CHAS, and others are added to the model.
 - This improves the model's R² to 0.686, reflecting a better fit to the data.
+
 **C) Model 3: Using All 13 Features**
 - The final model includes all 13 variables from the dataset.
 - The R² increases significantly to 0.771, indicating a much better fit to the data. The Adjusted R² further confirms that the model is highly predictive.
