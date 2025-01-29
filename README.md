@@ -42,9 +42,13 @@ and upload the dataset directly to Google Drive.
 If you're using Google Colab, you need to mount your Google Drive and load the dataset. Use the following code to mount your Google Drive and set the path for the dataset:
 
 '''from google.colab import drive
+
 drive.mount('/content/drive')
+
 #Change directory to where your dataset is located in Google Drive
+
 import pandas as pd
+
 df = pd.read_csv('/content/drive/My Drive/path_to_your_folder/BostonHousing.csv')  # Adjust path accordingly'''
 
 Once the dataset is loaded, you can run the cells in the notebook to perform the Linear Regression analysis.
