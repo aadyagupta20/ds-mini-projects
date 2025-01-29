@@ -1,17 +1,17 @@
 # ds-mini-projects
 A collection of simple data science projects covering regression, classification, clustering, and data visualization. Each project includes code, explanations, and insights.
 
-_**File 1:**_
-**Linear Regression on Boston Housing Dataset**
+# _**File 1:**_
+## **Linear Regression on Boston Housing Dataset**
 This repository contains the implementation of Linear Regression to predict housing prices (MEDV) from the Boston Housing Dataset. The project demonstrates how model performance improves as more features are added to the dataset, and it evaluates the model using various metrics such as R², MSE, MAE, RMSE, and Adjusted R².
 
-**Project Overview**
+## **Project Overview**
 This project applies Linear Regression to predict housing prices in Boston. We explore the impact of using different subsets of features from the dataset on model performance. The analysis is done step by step:
 - Starting with a model using just two features.
 - Adding more variables in subsequent models.
 - Evaluating each model's performance using various metrics.
 
-**Dataset Description**
+## **Dataset Description**
 The Boston Housing Dataset consists of various attributes related to housing in Boston. The target variable (MEDV) is the median value of owner-occupied homes in $1000s. The features (independent variables) include:
 
 CRIM: Crime rate per capita
@@ -28,7 +28,7 @@ PTRATIO: Pupil-teacher ratio
 B: Proportion of residents of African American descent
 LSTAT: Percentage of lower status population
 
-**Installation**
+## **Installation**
 **Prerequisites**
 To run the project, you'll need **Jupyter Notebook or Google Colab** for executing the code.
 
@@ -43,13 +43,13 @@ If you're using Google Colab, you need to mount your Google Drive and load the d
 
 '''from google.colab import drive
 drive.mount('/content/drive')
-# Change directory to where your dataset is located in Google Drive
+#Change directory to where your dataset is located in Google Drive
 import pandas as pd
 df = pd.read_csv('/content/drive/My Drive/path_to_your_folder/BostonHousing.csv')  # Adjust path accordingly'''
 
 Once the dataset is loaded, you can run the cells in the notebook to perform the Linear Regression analysis.
 
-**Models & Analysis**
+## **Models & Analysis**
 **A) Model 1: Using CRIM and ZN Only**
 - The initial model uses just CRIM (crime rate) and ZN (proportion of residential land) to predict housing prices.
 - This model gives a relatively low R² value of 0.422, showing that the model only captures about 42% of the variance in housing prices.
@@ -60,7 +60,7 @@ Once the dataset is loaded, you can run the cells in the notebook to perform the
 - The final model includes all 13 variables from the dataset.
 - The R² increases significantly to 0.771, indicating a much better fit to the data. The Adjusted R² further confirms that the model is highly predictive.
 
-**Metrics & Results**
+## **Metrics & Results**
 **Model Performance**
 
 **Model 1: Using CRIM and ZN**
@@ -84,7 +84,7 @@ Adjusted R²: 0.726
 
 The incremental improvements in model performance as more features are included demonstrate the power of using comprehensive data for predictive modeling.
 
-**Key Insights**
+## **Key Insights**
 1. **Effect of Feature Selection:** As more variables were added, the model performance improved significantly:
    - Model 1 had an R² of 42%, which increased to 77.1% in Model 3.
    - The error metrics (MSE, MAE, RMSE) decreased as we incorporated more features.
